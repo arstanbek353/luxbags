@@ -1,0 +1,96 @@
+.collect {
+  margin-bottom: 10rem;
+  &__mtitle {
+    font-size: 5.2rem;
+    margin-bottom: 4.5rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  &__item {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    &:hover {
+      .collect__content {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .collect__title,
+      .collect__text,
+      .collect__btn {
+        transform: translateY(0);
+      }
+    }
+  }
+  &__img {
+    height: 49.3rem;
+    @include img-cover;
+    position: relative;
+    z-index: 2;
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    color: #fff;
+    transition: all 300ms;
+  }
+  &__title {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    transition: all 300ms;
+    transform: translateY(4.7rem);
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.7rem;
+    transition: all 300ms;
+    transform: translateY(100rem);
+  }
+  &__btn {
+    color: #19191D;
+    padding: 1.4rem 1.6rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    transition: all 300ms;
+    transform: translateY(100rem);
+  }
+  @include mob {
+    margin-bottom: 7rem;
+    &__mtitle {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+    &__img {
+      height: 37rem;
+    }
+    &__title {
+      transform: translateY(4.7rem);
+    }
+    &__text {
+      transform: translateY(100rem);
+    }
+    &__btn {
+      padding: 1.4rem 2.5rem;
+      border-radius: 5rem;
+      transform: translateY(100rem);
+    }
+  }
+}

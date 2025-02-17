@@ -1,0 +1,306 @@
+.detail {
+  margin-bottom: 6rem;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+  &__left {
+    width: 69.5rem;
+    position: relative;
+  }
+  &__sw {
+    &-slide {
+      height: 61rem;
+      width: 100%;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      @include img-cover;
+    }
+  }
+  &__th {
+    &-slider {
+      position: absolute;
+      left: 3.5rem;
+      top: 3.5rem;
+      height: 48.2rem;
+      width: 7.2rem;
+      z-index: 5;
+    }
+    &-slide {
+      width: 7.2rem;
+      height: 7.2rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border: 0.1rem solid #CCCCCC;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include img-cover;
+    }
+  }
+  &__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    color: #88898C;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  &__mtitle {
+    font-size: 4.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    &--mob {
+      display: none;
+    }
+  }
+  &__articul {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #909090;
+    margin-bottom: 4.5rem;
+  }
+  &__vars {
+    margin-bottom: 4.5rem;
+  }
+  &__vars-title {
+    font-weight: 1.4rem;
+    color: #646464;
+    margin-bottom: 1.5rem;
+  }
+  &__vars-list {
+    display: flex;
+    gap: 1.3rem;
+  }
+  &__var {
+    width: 5rem;
+    height: 5rem;
+    border: 0.1rem solid #A9A9A9;
+    border-radius: 1rem;
+    overflow: hidden;
+    @include img-cover;
+  }
+  &__price {
+    margin-bottom: 3.8rem;
+  }
+  &__price-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #646464;
+    margin-bottom: 1.5rem;
+  }
+  &__price-value {
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: #151515;
+    display: flex;
+  }
+  &__price-orig {
+    color: #7D7D7D;
+    font-size: 0.5em;
+    margin-left: 1.4em;
+    margin-top: 0.2em;
+    text-decoration: line-through;
+  }
+  &__stock {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url(../images/dist/stock-true.svg);
+    }
+  }
+  &__acts {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    width: 32.2rem;
+    padding: 2.1rem;
+    border-radius: 5.2rem;
+    background-color: #272727;
+  }
+  &__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #969799;
+    font-size: 1.8rem;
+    border-radius: 4.7rem;
+    font-weight: 600;
+    span {
+      padding: 1rem;
+    }
+    button {
+      padding: 2rem 2rem;
+    }
+  }
+  &__fav {
+    width: 6.5rem;
+    height: 6.5rem;
+    @include img-contain;
+  }
+  @include mob {
+    margin-bottom: 4rem;
+    &__inner {
+      display: block;
+    }
+    &__left {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &__sw {
+      &-slider {
+        margin-bottom: 1rem;
+      }
+      &-slide {
+        height: 32rem;
+      }
+    }
+    &__th {
+      margin-top: 1rem;
+      &-slider {
+        position: relative;
+        left: auto;
+        top: auto;
+        height: auto;
+        width: 100%;
+      }
+      &-slide {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 0;
+        margin-right: 0.9em;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &__right {
+      flex-direction: column;
+    }
+    &__subtitle {
+      display: none;
+    }
+    &__mtitle {
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+      &--mob {
+        display: block;
+      }
+      &--desk {
+        display: none;
+      }
+    }
+    &__articul {
+      display: none;
+    }
+    &__vars {
+      order: 5;
+      margin-bottom: 0;
+    }
+    &__vars-list {
+      gap: 1.5rem;
+    }
+    &__var {
+      width: 6rem;
+      height: 6rem;
+    }
+    &__price {
+      margin-bottom: 2.7rem;
+    }
+    &__price-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    &__price-value {
+      font-size: 2.8rem;
+    }
+    &__price-orig {
+      margin-top: 0.2em;
+    }
+    &__stock {
+      margin-bottom: 3rem;
+    }
+    &__acts {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-bottom: 3rem;
+    }
+    &__add {
+      font-size: 1.6rem;
+      width: 100%;
+      padding: 1.4rem;
+      border-radius: 4.7rem;
+    }
+    &__count {
+      span {
+        padding: 1.3rem;
+      }
+      button {
+        padding: 1.3rem;
+      }
+    }
+    &__fav {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+
+.brc {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 500;
+    color: #88898C;
+    font-size: 1.5rem;
+    li {
+      display: inline-flex;
+      align-items: center;
+      &::after {
+        content: "/";
+        margin: 0 1rem;
+        font-size: 0.5em;
+        margin-top: 0.2em;
+      }
+      &:last-child {
+        color: #B5B5B5;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  @include mob {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    &__list {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.tab {
+  margin-bottom: 10rem;
+  &__heads {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #6A6B74;
+    border-bottom: 0.1rem solid #E0E2F4;
+    margin-bottom: 4rem;
+  }
+  &__head {
+    margin-right: 7rem;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      font-weight: 700;
+      color: #363636;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        width: 100%;
+        height: 0.3rem;
+        border-radius: 0.2rem;
+        background-color: #363636;
+      }
+    }
+  }
+  @include mob {
+    margin-bottom: 7rem;
+    &__heads {
+      width: 100vw;
+      position: relative;
+      left: -1.6rem;
+      padding-left: 1.6rem;
+      overflow: auto;
+      margin-bottom: 3rem;
+    }
+    &__head {
+      margin-right: 3rem;
+      padding: 1rem 0;
+      white-space: nowrap;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.tab-info {
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  &__inner {
+    display: flex;
+    gap: 8rem;
+  }
+  &__desc {
+    color: #747474;
+    font-size: 1.6rem;
+    width: 66rem;
+  }
+  &__char {
+    font-size: 1.6rem;
+    color: #615F5F;
+    font-weight: 500;
+    td {
+      padding-right: 4rem;
+      padding-bottom: 1.4rem;
+      &:last-child {
+        color: #000000;
+      }
+    }
+  }
+  @include mob {
+    &__title {
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+    &__inner {
+      display: block;
+    }
+    &__desc {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    &__char {
+      font-size: 1.4rem;
+      td {
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

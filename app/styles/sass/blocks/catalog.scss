@@ -1,0 +1,256 @@
+.catalog {
+  margin-bottom: 10rem;
+  &__dot-title {
+    display: flex;
+    align-items: center;
+    font-size: 5.2rem;
+    margin-bottom: 4.5rem;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.8rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url(../images/dist/dot-title.svg);
+    }
+  }
+  &__m-title {
+    font-size: 5.2rem;
+    margin-bottom: 4.5rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @include mob {
+    margin-bottom: 7rem;
+    &__dot-title {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      &::before {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+    }
+    &__m-title {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  &__img {
+    position: relative;
+    z-index: 2;
+    height: 49rem;
+    @include img-cover;
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 3.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  &__price {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  &__acts {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__act {
+    width: 4.8rem;
+    height: 4.8rem;
+    @include img-cover;
+  }
+  @include mob {
+    border-radius: 1.5rem;
+    &__img {
+      height: 33.3rem;
+    }
+    &__content {
+      padding: 2rem 1.5rem;
+    }
+    &__title {
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
+    }
+    &__price {
+      font-size: 1.4rem;
+    }
+    &__acts {
+      gap: 1rem;
+    }
+    &__act {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+  }
+}
+
+.catalog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  &__left {
+    display: flex;
+    align-items: flex-end;
+    font-size: 5.2rem;
+  }
+  &__title {
+    font-weight: 500;
+  }
+  &__count {
+    font-size: 1.8rem;
+    color: #A6A6A6;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__seper {
+    height: 1.6rem;
+    width: 0.1rem;
+    background-color: #D0D0D0;
+  }
+  &__select {
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+  
+      height: 4.4rem;
+      padding: 1.3rem 2rem;
+      padding-right: 3rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #343439;
+      background-color: #fff;
+      border-radius: 2.5rem;
+      border: 0.1rem solid #F0F0F0;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: 1rem auto;
+      background-position: right 1rem center;
+      background-image: url(../images/dist/select.svg);
+      &:active,
+      &:focus,
+      &:focus-visible {
+        outline: #000 auto 1px;
+      }
+    }
+  
+    select::-ms-expand {
+      display: none;
+    }
+  }
+  &__filter-btn {
+    display: none;
+  }
+  @include mob {
+    flex-direction: column;
+    margin-bottom: 4rem;
+    align-items: flex-start;
+    padding-top: 3rem;
+    &__left {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+    &__count {
+      font-size: 1.4rem;
+      padding-bottom: 0.3em;
+      padding-left: 0.5em;
+    }
+    &__right {
+      display: none;
+    }
+    &__seper {
+      height: 1.6rem;
+      width: 0.1rem;
+      background-color: #D0D0D0;
+    }
+    &__select {
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    
+        height: 4.4rem;
+        padding: 1.3rem 2rem;
+        padding-right: 3rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #343439;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        border: 0.1rem solid #F0F0F0;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 1rem auto;
+        background-position: right 1rem center;
+        background-image: url(../images/dist/select.svg);
+        &:active,
+        &:focus,
+        &:focus-visible {
+          outline: #000 auto 1px;
+        }
+      }
+    
+      select::-ms-expand {
+        display: none;
+      }
+    }
+    &__filter-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: #fff;
+      border-radius: 2.5rem;
+      background-color: #272727;
+      width: 100%;
+      padding: 1.6rem;
+      gap: 1rem;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/dist/filter.svg);
+      }
+    }
+  }
+}

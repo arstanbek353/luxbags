@@ -1,0 +1,101 @@
+.footer {
+  padding: 3rem 0;
+  padding-bottom: 7rem;
+  background-color: #F3F3F3;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    width: 23.4rem;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    color: #4E4E4E;
+  }
+  &__col-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2.6rem;
+  }
+  &__col {
+    color: #4E4E4E;
+    a {
+      display: block;
+      margin-bottom: 2.2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__tel {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2.3rem;
+  }
+  &__socials {
+    display: flex;
+    gap: 2.8rem;
+  }
+  &__soc {
+    display: inline-block;
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+    }
+  }
+  @include mob {
+    padding: 3rem 0;
+    padding-bottom: 6rem;
+    &__inner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__left {
+      margin-bottom: 8.2rem;
+      order: -2;
+    }
+    &__logo {
+      width: 23.4rem;
+      margin-bottom: 3.4rem;
+    }
+    &__text {
+      color: #4E4E4E;
+    }
+    &__col-title {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+    &__col {
+      width: 49%;
+      a {
+        margin-bottom: 3rem;
+      }
+    }
+    &__right {
+      order: -1;
+      margin-bottom: 4rem;
+      width: 100%;
+    }
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__tel {
+      display: none;
+    }
+    &__socials {
+      display: flex;
+      gap: 2.8rem;
+    }
+  }
+}

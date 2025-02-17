@@ -1,0 +1,100 @@
+<div class="cart">
+  <div class="container">
+    <div class="cart__inner">
+      <div class="cart__left">
+        <div class="cart__m-title">Оплата и доставка</div>
+        <form class="cart-contact cart__contact">
+          <div class="cart-contact__m-title">Контактные данные</div>
+          <div class="cart-contact__inner">
+            <div class="cart-contact__item">
+              <input type="text" class="cart-contact__input" required>
+              <div class="cart-contact__pl">ФИО</div>
+            </div>
+            <div class="cart-contact__item cart-contact__item--50">
+              <input type="text" class="cart-contact__input" required>
+              <div class="cart-contact__pl">Телефон</div>
+            </div>
+            <div class="cart-contact__item cart-contact__item--50">
+              <input type="text" class="cart-contact__input" required>
+              <div class="cart-contact__pl">E-mail</div>
+            </div>
+            <div class="cart-contact__item">
+              <input type="text" class="cart-contact__input" required>
+              <div class="cart-contact__pl">Комментарий к заказу</div>
+            </div>
+          </div>
+        </form>
+        <div class="cart-pay">
+          <div class="cart-pay__m-title">Способ оплаты</div>
+          <div class="cart-pay__payways">
+            <label class="cart-pay__payway">
+              <input type="radio" name="payway" hidden>
+              <span class="cart-pay__radio"></span>
+              <span>Оплата картой при получении</span>
+            </label>
+            <label class="cart-pay__payway">
+              <input type="radio" name="payway" hidden>
+              <span class="cart-pay__radio"></span>
+              <span>Оплата наличными при получении</span>
+            </label>
+          </div>
+          <div class="cart-pay__add-card">
+            <img src="images/dist/add-card.svg" alt="">
+            <span>Добавить карту</span>
+          </div>
+        </div>
+        <div class="cart-delivery">
+          <div class="cart-delivery__head">
+            <div class="cart-delivery__m-title">Способ получения</div>
+            <div class="cart-delivery__tabs">
+              <div class="cart-delivery__tab active">Самовывоз</div>
+              <div class="cart-delivery__tab">Курьером</div>
+            </div>
+          </div>
+          <div class="cart-delivery__body">
+            <div class="cart-delivery__list">
+              <div class="cart-delivery__item">
+                <div class="cart-delivery__icon">
+                  <img src="images/dist/map-marker.svg" alt="">
+                </div>
+                <div class="cart-delivery__texts">
+                  <div class="cart-delivery__text">Пункт выдачи</div>
+                  <div class="cart-delivery__text2">Россия, Тверская область, город Луховицы, бульвар Космонавтов, 12</div>
+                </div>
+                <div class="cart-delivery__arrow">
+                  <img src="images/dist/map-arrow-right.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__right">
+        <div class="cart__m-title">О заказе</div>
+        <ul class="cart__info">
+          <li>
+            <span>Стоимость заказа</span>
+            <span>5 999 ₽</span>
+          </li>
+          <li>
+            <span>Цена доставки</span>
+            <span>5 999 ₽</span>
+          </li>
+          <li>
+            <span>Скидка по промокоду</span>
+            <span>5 999 ₽</span>
+          </li>
+          <li>
+            <span>Скидка по промокоду</span>
+            <span>5 999 ₽</span>
+          </li>
+        </ul>
+        <div class="cart__total">
+          <span>Итого</span>
+          <span>5 999 ₽</span>
+        </div>
+        <button class="cart__to-order">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.banner-1 {
+  margin-bottom: 10rem;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  &__item {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  &__img {
+    height: 79.8rem;
+    @include img-cover;
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+    z-index: 3;
+  }
+  @include mob {
+    margin-bottom: 7rem;
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__img {
+      height: 39.6rem;
+    }
+    &__title {
+      font-size: 1.8rem;
+      left: 2rem;
+      top: 2rem;
+    }
+  }
+}

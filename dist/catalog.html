@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__top">
+            <button class="header__act header__act--burger">
+              <img src="images/dist/burger.svg" alt="">
+            </button>
+            <a href="/" class="header__logo">
+              <img src="images/dist/logo.svg" alt="">
+            </a>
+            <div class="header__acts">
+              <a href="#" class="header__act header__act--fav">
+                <img src="images/dist/fav.svg" alt="">
+              </a>
+              <a href="#" class="header__act header__act--cart">
+                <img src="images/dist/cart.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="header__bot">
+            <div class="header__item">
+              <div class="header__menu-item">
+                <a href="#" class="header__menu-title">Каталог</a>
+                <div class="header__drop">
+                  <div class="header__drop-list">
+                    <a href="#" class="header__drop-item">Каталог 1</a>
+                    <a href="#" class="header__drop-item">Каталог 2</a>
+                    <a href="#" class="header__drop-item">Каталог 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__menu-item">
+                <a href="#" class="header__menu-title">Каталог</a>
+                <div class="header__drop">
+                  <div class="header__drop-list">
+                    <a href="#" class="header__drop-item">Каталог 1</a>
+                    <a href="#" class="header__drop-item">Каталог 2</a>
+                    <a href="#" class="header__drop-item">Каталог 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__menu-item">
+                <a href="#" class="header__menu-title">Каталог</a>
+                <div class="header__drop">
+                  <div class="header__drop-list">
+                    <a href="#" class="header__drop-item">Каталог 1</a>
+                    <a href="#" class="header__drop-item">Каталог 2</a>
+                    <a href="#" class="header__drop-item">Каталог 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item header__item--search">
+              <form class="header__search">
+                <input type="text" placeholder="Найти...">
+                <button>
+                  <img src="images/dist/magnific.svg" alt="">
+                </button>
+              </form>
+            </div>
+            <div class="header__item">
+              <div class="header__menu-item">
+                <a href="#" class="header__menu-title">Каталог</a>
+                <div class="header__drop">
+                  <div class="header__drop-list">
+                    <a href="#" class="header__drop-item">Каталог 1</a>
+                    <a href="#" class="header__drop-item">Каталог 2</a>
+                    <a href="#" class="header__drop-item">Каталог 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__menu-item">
+                <a href="#" class="header__menu-title">Каталог</a>
+                <div class="header__drop">
+                  <div class="header__drop-list">
+                    <a href="#" class="header__drop-item">Каталог 1</a>
+                    <a href="#" class="header__drop-item">Каталог 2</a>
+                    <a href="#" class="header__drop-item">Каталог 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<div class="catalog">
+  <div class="container">
+    <div class="catalog__inner">
+      <div class="catalog-head">
+        <div class="catalog-head__left">
+          <div class="catalog-head__title">Сумки</div>
+          <div class="catalog-head__count">14 товаров</div>
+        </div>
+        <button class="catalog-head__filter-btn">Фильтры</button>
+        <div class="catalog-head__right">
+          <div class="catalog-head__select">
+            <select name="" id="">
+              <option value="0" selected disabled>Цена</option>
+              <option value="1">option 1</option>
+              <option value="1">option 1</option>
+            </select>
+          </div>
+          <div class="catalog-head__select">
+            <select name="" id="">
+              <option value="0" selected disabled>Бренд</option>
+              <option value="1">option 1</option>
+              <option value="1">option 1</option>
+            </select>
+          </div>
+          <div class="catalog-head__select">
+            <select name="" id="">
+              <option value="0" selected disabled>Изделие</option>
+              <option value="1">option 1</option>
+              <option value="1">option 1</option>
+            </select>
+          </div>
+          <div class="catalog-head__select">
+            <select name="" id="">
+              <option value="0" selected disabled>Цвет</option>
+              <option value="1">option 1</option>
+              <option value="1">option 1</option>
+            </select>
+          </div>
+          <span class="catalog-head__seper"></span>
+          <div class="catalog-head__select">
+            <select name="" id="">
+              <option value="0" selected disabled>Сначала дешевые</option>
+              <option value="1">option 1</option>
+              <option value="1">option 1</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__list">
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+          <div class="card">
+  <div class="card__img">
+    <img src="images/dist/card-1.jpg" alt="">
+  </div>
+  <div class="card__content">
+    <div class="card__texts">
+      <div class="card__title">Miu Miu</div>
+      <div class="card__price">6500 ₽</div>
+    </div>
+    <div class="card__acts">
+      <button class="card__act card__act--fav">
+        <img src="images/dist/fav.svg" alt="">
+      </button>
+      <button class="card__act card__act--cart">
+        <img src="images/dist/cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <a href="#" class="footer__logo">
+          <img src="images/dist/logo.svg" alt="">
+        </a>
+        <div class="footer__text">Официальный интернет-магазин <br> люксовых реплик мировых брендов</div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">КАТАЛОГ</div>
+        <div class="footer__list">
+          <a href="#">Сумки</a>
+          <a href="">Клатчи</a>
+          <a href="">Рюкзаки</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">О НАС</div>
+        <div class="footer__list">
+          <a href="#">Для покупателей</a>
+          <a href="">Контакты</a>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__contacts">
+          <a href="#" class="footer__tel">+7 (495) 555 32 54</a>
+          <div class="footer__socials">
+            <a href="#" class="footer__soc">
+              <img src="images/dist/whatsapp.svg" alt="">
+            </a>
+            <a href="#" class="footer__soc">
+              <img src="images/dist/telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
