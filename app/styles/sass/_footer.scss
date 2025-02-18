@@ -24,8 +24,13 @@
     a {
       display: block;
       margin-bottom: 2.2rem;
+      transition: all 300ms;
       &:last-child {
         margin-bottom: 0;
+      }
+      &:hover {
+        text-decoration: underline;
+        color: #000;
       }
     }
   }
@@ -45,10 +50,24 @@
   }
   &__soc {
     display: inline-block;
-    img {
+    svg {
       width: 5rem;
       height: 5rem;
       object-fit: contain;
+    }
+    &--wh {
+      &:hover {
+        svg path {
+          fill: #25d366;
+        }
+      }
+    }
+    &--tg {
+      &:hover {
+        svg path {
+          fill: #24A1DE;
+        }
+      }
     }
   }
   @include mob {

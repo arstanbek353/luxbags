@@ -1,0 +1,80 @@
+.faq {
+  margin-bottom: 10rem;
+  &__mtitle {
+    font-size: 5.2rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    align-items: start;
+    gap: 1.5rem;
+  }
+  &__col {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: min-content;
+    gap: 1.5rem;
+  }
+  &__item {
+    padding: 2.2rem 2rem;
+    border-radius: 1.5rem;
+    background-color: #F0EFF4;
+    cursor: pointer;
+    &.active {
+      .faq__text {
+        display: block;
+      }
+      .faq__icon {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    transition: all 300ms;
+    margin-left: 3rem;
+    flex-shrink: 0;
+    @include img-contain;
+  }
+  &__text {
+    display: none;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+  @include mob {
+    margin-bottom: 7rem;
+    &__mtitle {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+    }
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+    &__col {
+      gap: 1rem;
+    }
+    &__item {
+      padding: 2rem 1.5rem;
+    }
+    &__title {
+      font-size: 1.6rem;
+    }
+    &__icon {
+      margin-left: 2rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+}

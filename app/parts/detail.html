@@ -4,34 +4,34 @@
       <div class="detail__left">
         <div class="detail__mtitle detail__mtitle--mob">Saint Laurent
           Calypso medium</div>
-        <div class="detail__sw-slider">
-          <div class="detail__sw-wrapper">
-            <div class="detail__sw-slide">
+        <div class="swiper-container detail__sw-slider">
+          <div class="swiper-wrapper detail__sw-wrapper">
+            <div class="swiper-slide detail__sw-slide">
               <img src="images/dist/detail-1.jpg" alt="">
             </div>
-            <!-- <div class="detail__sw-slide">
+            <div class="swiper-slide detail__sw-slide">
               <img src="images/dist/detail-2.jpg" alt="">
             </div>
-            <div class="detail__sw-slide">
+            <div class="swiper-slide detail__sw-slide">
               <img src="images/dist/detail-3.jpg" alt="">
             </div>
-            <div class="detail__sw-slide">
+            <div class="swiper-slide detail__sw-slide">
               <img src="images/dist/detail-4.jpg" alt="">
-            </div> -->
+            </div>
           </div>
         </div>
-        <div class="detail__th-slider">
-          <div class="detail__th-wrapper">
-            <div class="detail__th-slide">
+        <div class="swiper-container detail__th-slider">
+          <div class="swiper-wrapper detail__th-wrapper">
+            <div class="swiper-slide detail__th-slide">
               <img src="images/dist/detail-1.jpg" alt="">
             </div>
-            <div class="detail__th-slide">
+            <div class="swiper-slide detail__th-slide">
               <img src="images/dist/detail-2.jpg" alt="">
             </div>
-            <div class="detail__th-slide">
+            <div class="swiper-slide detail__th-slide">
               <img src="images/dist/detail-3.jpg" alt="">
             </div>
-            <div class="detail__th-slide">
+            <div class="swiper-slide detail__th-slide">
               <img src="images/dist/detail-4.jpg" alt="">
             </div>
           </div>
@@ -65,14 +65,18 @@
         </div>
         <div class="detail__stock">Есть в наличии</div>
         <div class="detail__acts">
-          <button class="detail__add">В корзину</button>
-          <div class="detail__count">
+          <button class="detail__add scale-text"><span>В корзину</span></button>
+          <div class="detail__count scale-btn">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
           <button class="detail__fav">
-            <img src="images/dist/fav.svg" alt="">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white"/>
+              <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" class="circle"/>
+              <path d="M30.8407 16.6611C28.3822 15.1532 26.2363 15.7609 24.9475 16.7289C24.4195 17.1258 24.1555 17.3247 23.9997 17.3247C23.8438 17.3247 23.5798 17.1258 23.0518 16.7289C21.763 15.7609 19.6171 15.1532 17.1586 16.6611C13.9328 18.6402 13.2032 25.1677 20.6447 30.6769C22.0618 31.7247 22.7704 32.2499 23.9997 32.2499C25.2289 32.2499 25.9375 31.7256 27.3547 30.676C34.7962 25.1687 34.0665 18.6402 30.8407 16.6611Z" stroke="#363636" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </button>
         </div>
       </div>

@@ -69,7 +69,19 @@
     top: 0;
     width: 5rem;
     height: 5rem;
-    @include img-contain;
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      path {
+        transition: all 300ms;
+      }
+    }
+    &:hover {
+      path {
+        stroke: red;
+      }
+    }
   }
   &__price {
     font-size: 2.4rem;

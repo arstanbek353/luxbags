@@ -14,8 +14,12 @@
     padding: 1.5rem 0;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 300ms;
     &:last-child {
       margin-right: 0;
+    }
+    &:hover {
+      color: #000;
     }
     &.active {
       font-weight: 700;

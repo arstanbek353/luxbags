@@ -35,6 +35,10 @@
       overflow: hidden;
       margin-bottom: 1rem;
       border: 0.1rem solid #CCCCCC;
+      cursor: pointer;
+      &.swiper-slide-thumb-active {
+        border-color: green;
+      }
       &:last-child {
         margin-bottom: 0;
       }
@@ -159,7 +163,32 @@
   &__fav {
     width: 6.5rem;
     height: 6.5rem;
-    @include img-contain;
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .circle {
+      stroke: #E9E9E9;
+      transition: all 300ms;
+    }
+    path {
+      transition: all 300ms;
+    }
+    &:hover {
+      .circle {
+        stroke: #000;
+      }
+      path {
+        stroke: #000;
+      }
+    }
+    &.active {
+      path {
+        fill: red;
+        stroke: red;
+      }
+    }
   }
   @include mob {
     margin-bottom: 4rem;

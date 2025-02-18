@@ -61,6 +61,7 @@
     background-color: #fff;
     gap: 2rem;
     &::after {
+      transition: all 300ms;
       content: "";
       display: inline-block;
       width: 1.4rem;
@@ -69,6 +70,11 @@
       background-size: contain;
       background-position: center;
       background-image: url(../images/dist/arrow-right.svg);
+    }
+    &:hover {
+      &::after {
+        transform: translateX(30%);
+      }
     }
   }
   &__nav {
@@ -79,11 +85,6 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-  }
-  &__prev {
-    img {
-      transform: scale(-1, 1);
-    }
   }
   &__prev,
   &__next {
@@ -96,11 +97,28 @@
     justify-content: center;
     &.disabled {
       opacity: 0.5;
+      pointer-events: none;
     }
     img {
       width: 1.4rem;
       height: 1.4rem;
       object-fit: contain;
+      transition: all 300ms;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__prev {
+    img {
+      transform: scale(-1, 1);
+    }
+    &:hover {
+      img {
+        transform: scale(-1.1, 1.1);
+      }
     }
   }
   @include mob {

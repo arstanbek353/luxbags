@@ -6,4 +6,5 @@
 	<li><a href="https://arstanbek353.github.io/luxbags/dist/catalog.html">catalog</a></li>
 	<li><a href="https://arstanbek353.github.io/luxbags/dist/cart.html">cart</a></li>
 	<li><a href="https://arstanbek353.github.io/luxbags/dist/buyer.html">buyer</a></li>
+	<li><a href="https://arstanbek353.github.io/luxbags/dist/contacts.html">contacts</a></li>
 </ol>
